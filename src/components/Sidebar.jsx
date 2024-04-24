@@ -6,9 +6,9 @@ const Sidebar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
+    <div className={`sidebar ${isOpen ? "open" : "closed"}`}>
       <div className="mb-4">
-        <button className="btn1 text-center" onClick={handleToggle}>
+        <button className="logo" onClick={handleToggle}>
           N
         </button>
       </div>
@@ -17,30 +17,27 @@ const Sidebar = () => {
         {isOpen && (
           <div className="text-center">
             <ul className="list-unstyled d-flex flex-column justify-content-between">
-              <li className="my-2">
-                <i className="bi bi-search"></i>
+              <li>
+              <i class="fa-solid fa-magnifying-glass icon"></i>
               </li>
-              <li className="my-2">
-                <i className="bi bi-display"></i>
+              <li>
+              <i class="fa-solid fa-display icon"></i>
               </li>
-              <li className="my-2">
-                <i className="bi bi-question-circle"></i>
+              <li>
+              <i class="fa-regular fa-circle-question icon"></i>
               </li>
-              <li className="my-2">
-                <i className="bi bi-calendar-event"></i>
+              <li>
+              <i class="fa-regular fa-calendar icon"></i>
               </li>
 
-              <li className="my-2">
-                <i className="bi bi-search"></i>
+              <li>
+              <i class="fa-regular fa-building icon"></i>
               </li>
-              <li className="my-2">
-                <i className="bi bi-display"></i>
+              <li>
+              <i class="fa-solid fa-comment-dollar icon"></i>
               </li>
-              <li className="my-2">
-                <i className="bi bi-question-circle"></i>
-              </li>
-              <li className="my-2">
-                <i className="bi bi-calendar-event"></i>
+              <li>
+              <i class="fa-solid fa-headphones icon"></i>
               </li>
             </ul>
           </div>

@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-
+.bg-home{
+  display: flex;
+}
 .header {
   background-color: #272847;
   height: 150px;
@@ -72,7 +74,7 @@
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   flex-grow: 2;
 }
-.btn1 {
+.logo {
   background-color: #272847;
   height: 35px;
   width: 35px;
@@ -80,10 +82,15 @@
   color: white;
   margin-bottom: 40px;
 }
-
+.icon{
+  color: #747474;
+  font-size: 20px;
+}
 li {
   list-style-type: none;
   cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 ul {

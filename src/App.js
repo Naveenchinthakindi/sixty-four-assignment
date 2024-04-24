@@ -5,11 +5,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="d-flex">
-      <div style={{height:'100vh'}}>
+    <div className="bg-home">
+      <div>
         <Sidebar />
       </div>
-      <div className="">
+      <div>
         <Home />
       </div>
     </div>

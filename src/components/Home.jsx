@@ -104,31 +104,31 @@ const Home = () => {
   //static data for top section cards
   const cards =[
     {
-      "id": 1,
+      "id": 0,
       "title": "Lorem ipsum",
       "date": "23-04-2023",
       "color": "orange"
     },
     {
-      "id": 2,
+      "id": 1,
       "title": "Dolor sit amet",
       "date": "15-06-2022",
       "color": "pink"
     },
     {
-      "id": 3,
+      "id": 2,
       "title": "Consectetur adipiscing elit",
       "date": "07-12-2024",
       "color": "green"
     },
     {
-      "id": 4,
+      "id": 3,
       "title": "Sed do eiusmod tempor",
       "date": "28-08-2022",
       "color": "lightblue"
     },
     {
-      "id": 5,
+      "id": 4,
       "title": "Ut labore et dolore magna",
       "date": "19-11-2023",
       "color": "lightgreen"
@@ -186,9 +186,9 @@ const Home = () => {
           </div>
           <div>
             <p>
-              <i className="bi bi-calendar"></i> &nbsp; Today 14 February{" "}
-              <i className="bi bi-clock"></i> &nbsp; 16:42 &nbsp;&nbsp;&nbsp;
-              <i className="bi bi-bell m-4"></i>
+            <i class="fa-regular fa-calendar"></i>&nbsp; Today 14 February{" "}
+            <i class="fa-regular fa-clock"></i>&nbsp; 16:42 &nbsp;&nbsp;&nbsp;
+            <i class="fa-regular fa-bell"></i>
             </p>
           </div>
         </div>
@@ -208,10 +208,7 @@ const Home = () => {
           {/* body card section */}
           <div className="bodycards">
             <button className="arrow">
-              <i
-                className="bi bi-arrow-left-circle-fill"
-                onClick={handlePrevious}
-              ></i>
+            <i class="fa-solid fa-circle-arrow-left"  onClick={handlePrevious}></i>
             </button>
             <div className="text-center">
               <div className="subcards">
@@ -237,10 +234,7 @@ const Home = () => {
               </div>
             </div>
             <button className="arrow">
-              <i
-                className="bi bi-arrow-right-circle-fill"
-                onClick={handleNext}
-              ></i>
+            <i class="fa-solid fa-circle-arrow-right"  onClick={handleNext}></i>
             </button>
           </div>
 
