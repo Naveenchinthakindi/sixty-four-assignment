@@ -1,0 +1,223 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+.header {
+  background-color: #272847;
+  height: 150px;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+.card {
+  height: 200px;
+  width: 230px;
+  background-color: white;
+  margin: 20px;
+  margin-top: -50px;
+  border: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500px;
+  color: black;
+  padding: 20px;
+  margin-left: 10px;
+  transition: transform 0.3s, box-shadow 0.3s; 
+  cursor: pointer; 
+}
+
+.title{
+  font-size: 15px;
+  font-weight:540;
+  color: #2C2D32;
+}
+
+.card:hover {
+  transform: scale(1.1); 
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 15px 30px 0px; 
+}
+
+.cardbox {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+.analysis {
+  margin: 15px;
+  width: 180px;
+  height: auto;
+  background-color: white;
+  flex-wrap: wrap;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: transform 0.3s, box-shadow 0.3s; 
+  cursor: pointer; 
+  flex-grow: 1;
+}
+
+.analysis:hover {
+  transform: scale(1.1); 
+  box-shadow: rgba(149, 157, 165, 0.3) 0px 12px 32px; 
+}
+
+.news {
+  width: auto;
+  padding: 20px;
+  height: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  flex-grow: 2;
+}
+.btn1 {
+  background-color: #272847;
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  color: white;
+  margin-bottom: 40px;
+}
+
+li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+ul {
+  width: 50px;
+  height: 200px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.sidebar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.sidebar_toggle{
+  height: 100%;
+  flex-grow: 2;
+  
+}
+.bodycards {
+  width: 70%;
+  display: inline;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  flex-direction: row;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-left: 20px;
+}
+.newscontainer {
+  width: 30%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 20px;
+}
+
+img {
+  height: 150px;
+  background-size: cover;
+  width: 150px;
+  flex-grow: 2;
+}
+
+.subcards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.body-container {
+  display: flex;
+}
+.news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown {
+  margin-right: 20px;
+}
+
+label {
+  margin-right: 5px;
+}
+
+.arrow {
+  background-color: white;
+  border: none;
+  margin: 5px;
+  font-size: 25px;
+}
+.subNews {
+  border-width: 5px;
+}
+.subNews {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  border-width: 10px;
+  border-left: 3px solid gainsboro; 
+  flex-grow: 1; 
+  padding-left: 10px;
+}
+
+
+/* For screens smaller than 768px */
+@media (max-width: 320px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  .card {
+    height: 50px;
+    width: 150px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    cursor: pointer;
+  }
+
+  .bodycards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newscontainer {
+    width: 70%;
+    margin: 20px auto;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .arrow {
+    margin: 5px;
+    cursor: pointer;
+  }
+}
