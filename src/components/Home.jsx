@@ -101,37 +101,38 @@ const Home = () => {
     },
   ];
   
+  // const colordata = ["#B197FC","#74C0FC","#d666e5","#21bbfd","#fd6e21"]
   //static data for top section cards
   const cards =[
     {
       "id": 0,
       "title": "Lorem ipsum",
       "date": "23-04-2023",
-      "color": "orange"
+      "color": "#B197FC"
     },
     {
       "id": 1,
       "title": "Dolor sit amet",
       "date": "15-06-2022",
-      "color": "pink"
+      "color": "#74C0FC"
     },
     {
       "id": 2,
       "title": "Consectetur adipiscing elit",
       "date": "07-12-2024",
-      "color": "green"
+      "color": "#d666e5"
     },
     {
       "id": 3,
       "title": "Sed do eiusmod tempor",
       "date": "28-08-2022",
-      "color": "lightblue"
+      "color": "#21bbfd"
     },
     {
       "id": 4,
       "title": "Ut labore et dolore magna",
       "date": "19-11-2023",
-      "color": "lightgreen"
+      "color": "fd6e21"
     }
   ]
 
@@ -179,14 +180,14 @@ const Home = () => {
       <header>
         <div className="header">
           <div>
-            <h6>Good Afternoon, Akshay</h6>
+            <h5>Good Afternoon, Akshay</h5>
             <p style={{ color: "gray", fontSize: "10px" }}>
               You are Subscribe to Retail Plan
             </p>
           </div>
           <div>
             <p>
-            <i class="fa-regular fa-calendar"></i>&nbsp; Today 14 February{" "}
+            <i class="fa-regular fa-calendar"></i>&nbsp; Today 14 February
             <i class="fa-regular fa-clock"></i>&nbsp; 16:42 &nbsp;&nbsp;&nbsp;
             <i class="fa-regular fa-bell"></i>
             </p>

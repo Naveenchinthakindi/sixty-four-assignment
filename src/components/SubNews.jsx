@@ -5,9 +5,9 @@ const SubNews = (props) => {
   const {title} = props;
   return (
     <div className='subNews'>
-      <ul style={{height:'20px',margin:'0px', padding:'15px', marginBottom:'10px'}} className='d-flex'>
-        <li style={{listStyleType:'disc',color:'gray',margin:'0px',fontSize:'20px'}}></li>
-        <p style={{color:'#51C2FE'}}>February&nbsp;24&nbsp;2024</p>
+      <ul className="subnewsul">
+        <li></li>
+        <p >February&nbsp;24&nbsp;2024</p>
        </ul>
     
       <div className="content">
